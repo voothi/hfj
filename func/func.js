@@ -10,3 +10,10 @@ bark("rover", 23);
 bark("spot", 13);
 bark("spike", 53);
 bark("lady", 17);
+
+bark("jino", 20);
+bark("scottie", -1);
+bark("dino", 0, 0);
+bark("fido", 20);
+bark("lady", 10);
+bark("bruno", 21);

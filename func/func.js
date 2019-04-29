@@ -1,6 +1,6 @@
-function doIt(param) {
-    param = 2;
-}
-var test = 1;
-doIt(test);
-console.log(test);
+var student = "voothi";
+var year = 1987;
+var status = "existinguser";
+var isNewUser = (status == "newuser");
+saveMyProfile(student, year, status, isNewUser);
+

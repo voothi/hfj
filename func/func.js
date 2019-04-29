@@ -1,6 +1,14 @@
-var student = "voothi";
-var year = 1987;
-var status = "existinguser";
-var isNewUser = (status == "newuser");
-saveMyProfile(student, year, status, isNewUser);
+function speak(kind) {
+    var defaultSound = "";
 
+    if (kind == "dog") {
+        alert("WOOF!!");
+    } else if (kind == "cat") {
+        alert("Meow~~");
+    } else {
+        alert(defaultSound);
+    }
+}
+
+var pet = prompt("Введите тип питомца: ");
+speak(pet);

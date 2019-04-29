@@ -21,7 +21,7 @@ while (isSunk == false) {
 
         if (guess == location1 || guess == location2 || guess == location3) {
             alert("Точное попадание!");
-            
+
             hits++;
 
             if (hits == 3) {
@@ -35,3 +35,4 @@ while (isSunk == false) {
     var stats = "Вы выстрелили " + guesses + " раз для потопления корабля. " + "Ваша точность составила " + (3 / guesses)
     alert(stats);
 }
+

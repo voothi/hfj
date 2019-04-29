@@ -10,6 +10,20 @@
             "name": "Launch Chrome against localhost",
             "url": "http://battleship",
             "webRoot": "${workspaceFolder}"
+            
         }
     ]
 }
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Attach to url with files served from ./out",
+//             "type": "chrome",
+//             "request": "attach",
+//             "port": 9222,
+//             // "url": "http://battleship",
+//             // "webRoot": "${workspaceFolder}"
+//         }
+//     ]
+// }

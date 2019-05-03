@@ -19,3 +19,6 @@ flavors[3] = "vanilla chocolate chip";
 
 // Кол-во эл-во в массиве
 var numFlavors = flavors.length;
+
+// Возвращаем последний элемент, который был добавлен в массив
+var last = flavors[flavors.length - 1];

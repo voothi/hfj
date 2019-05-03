@@ -7,6 +7,8 @@
  * Массив - способ струкрурирования данных 
  */
 
- var flavors  = ['vanilla', 'butterscotch', 'lavender', 'chocolate', 'cookie dough'];
+var flavors = ['vanilla', 'butterscotch', 'lavender', 'chocolate', 'cookie dough'];
 
- console.log(flavors);
+console.log(flavors[2]); //lavender
+
+var flavorOfTheDay = flavors[2]; // Третий элемент массива

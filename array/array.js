@@ -27,7 +27,7 @@ console.log("Bubbles tests: " + scores.length);
 console.log("Highest bubble score: " + highScore);
 
 
-function getBestResults(scores) {
+function getBestResults(scores, highScore) {
     var bestSolutions = [];
 
     for (var i = 0; i < scores.length; i++) {
@@ -38,5 +38,5 @@ function getBestResults(scores) {
     return bestSolutions;
 }
 
-var bestSolutions = getBestResults(scores);
+var bestSolutions = getBestResults(scores, highScore);
 console.log("Solutions with the highest score: " + bestSolutions);

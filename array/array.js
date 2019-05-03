@@ -19,3 +19,8 @@ for (var i = 0; i < scores.length; i++) {
 }
 console.log("Bubbles tests: " + scores.length);
 console.log("Highest bubble score: " + highScore);
+
+var genres  = [];
+genres[0] = "Metal";
+genres[1] = "Goa Trance";
+var size = genres.length

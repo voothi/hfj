@@ -1,27 +1,31 @@
-var avatar;
-var levelThreshold = 1000;
-
-function getScope(points) {
-    var scope;
-    var i = 0;
-    while (i < levelThreshold) {
-        i = i + 1;
+function clunk(times) {
+    var num = times;
+    while (num > 0) {
+        display("clunk");
+        num = num - 1;
     }
-    var levelThreshold = points;
-    return scope;
 }
 
-getScope(11);
-console.log('global' +  levelThreshold);
-
-function getTest(test) {
-    var scope;
-    var i = 0;
-    while (i < levelThreshold) {
-        i = i + 1;
+function thingamajig(size) {
+    var facky = 1;
+    clunkCounter = 0;
+    if (size == 0) {
+        display("clank");
+    } else if (size == 1) {
+        display("thunk");
+    } else {
+        while (size > 1) {
+            facky = facky * size;
+            size = size - 1;
+        }
+        clunk(facky);
     }
-    console.log('func test ' + levelThreshold);
-    return scope;
 }
 
-getTest(12);
+function display(output) {
+    console.log(output);
+    clunkCounter = clunkCounter + 1;
+}
+var clunkCounter = 0;
+thingamajig(5);
+console.log(clunkCounter);

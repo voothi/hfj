@@ -1,24 +1,11 @@
-/**
- * Массив для хранения сортов мороженного
- * Определение массива ничинается с [
- * Перечисляются элементы массива через , (набора значений)
- * Первый элемент имеет индекс 0
- * В массив обычно группируются сходные данные, для хранения нескольких переменных
- * Массив - способ струкрурирования данных 
- */
-
-var flavors = ["vanilla", "butterscotch", "lavender", "chocolate", "cookie dough"];
-var arr1 = [1, 2, 3];
-
-console.log(flavors[2]); //lavender
-
-var flavorOfTheDay = flavors[2]; // Третий элемент массива
-
-// Обновление значения в массиве
-flavors[3] = "vanilla chocolate chip";
-
-// Кол-во эл-во в массиве
-var numFlavors = flavors.length;
-
-// Возвращаем последний элемент, который был добавлен в массив
-var last = flavors[flavors.length - 1];
+function makePhrases() {
+    var words1 = ["24/7", "multi-tier", "30,000 foot", "B-to-B", "win-win"];
+    var words2 = ["empowered", "value-added", "oriented", "focused", "aligned"];
+    var words3 = ["process", "solution", "tipping-point", "strategy", "vision"];
+    var rand1 = Math.floor(Math.random() * words1.length);
+    var rand2 = Math.floor(Math.random() * words2.length);
+    var rand3 = Math.floor(Math.random() * words3.length);
+    var phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3];
+    alert(phrase);
+}
+makePhrases();

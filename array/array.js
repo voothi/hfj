@@ -20,7 +20,10 @@ for (var i = 0; i < scores.length; i++) {
 console.log("Bubbles tests: " + scores.length);
 console.log("Highest bubble score: " + highScore);
 
-var genres  = [];
-genres.push("Metal");
-genres.push("Classic");
-var size = genres.length
+var bestSolutions = [];
+for (var i = 0; i < scores.length; i++) {
+    if (scores[i] == highScore) {
+        bestSolutions.push(i);
+    }
+}
+console.log("Solutions with the highest score: " + bestSolutions);

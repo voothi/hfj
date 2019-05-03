@@ -12,3 +12,6 @@ var flavors = ['vanilla', 'butterscotch', 'lavender', 'chocolate', 'cookie dough
 console.log(flavors[2]); //lavender
 
 var flavorOfTheDay = flavors[2]; // Третий элемент массива
+
+// Обновление значения в массиве
+flavors[3] = 'vanilla chocolate chip';

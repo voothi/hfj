@@ -7,7 +7,7 @@ function getScope(points) {
     while (i < levelThreshold) {
         i = i + 1;
     }
-    levelThreshold = points;
+    var levelThreshold = points;
     return scope;
 }
 

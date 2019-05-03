@@ -12,4 +12,16 @@ function getScope(points) {
 }
 
 getScope(11);
-console.log(levelThreshold);
+console.log('global' +  levelThreshold);
+
+function getTest(test) {
+    var scope;
+    var i = 0;
+    while (i < levelThreshold) {
+        i = i + 1;
+    }
+    console.log('func test ' + levelThreshold);
+    return scope;
+}
+
+getTest(12);

@@ -1,12 +1,14 @@
 var balance = 10500;
 var cameraOn = true;
-function steal(balance, amount) {
+function steal(steal_balance, amount) {
     cameraOn = false;
-    if (amount < balance) {
-        balance = balance - amount;
+    if (amount < steal_balance) {
+        balance = steal_balance - amount;
     }
-    return amount;
     cameraOn = true;
+    return amount;
 }
 var amount = steal(balance, 1250);
-alert("Criminal: you stole " + amount + "!");
+console.log("Criminal: you stole " + amount + "!");
+console.log(balance)
+console.log(cameraOn)

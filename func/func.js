@@ -1,14 +1,15 @@
-function speak(kind) {
-    var defaultSound = "";
+var avatar;
+var levelThreshold = 1000;
 
-    if (kind == "dog") {
-        alert("WOOF!!");
-    } else if (kind == "cat") {
-        alert("Meow~~");
-    } else {
-        alert(defaultSound);
+function getScope(points) {
+    var scope;
+    var i = 0;
+    while (i < levelThreshold) {
+        i = i + 1;
     }
+    levelThreshold = 100;
+    return scope;
 }
 
-var pet = prompt("Введите тип питомца: ");
-speak(pet);
+getScope();
+console.log(levelThreshold);
